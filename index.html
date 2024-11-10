@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <!-- Link to an external CSS file for styling -->
+  <link rel="stylesheet" href="Validation Project CSS File.css">
+</head>
+
+<body>
+
+  <!-- Main heading for the registration form -->
+  <h2>User Registration Form</h2>
+  
+  <!-- Form element with ID 'registrationForm' to manage form validation -->
+  <form id="registrationForm" novalidate>
+    
+    <!-- Username input field -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <!-- Error message placeholder for username validation -->
+    <span class="error-message" id="usernameError"></span>
+
+    <!-- Email input field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <!-- Error message placeholder for email validation -->
+    <span class="error-message" id="emailError"></span>
+
+    <!-- Password input field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <!-- Error message placeholder for password validation -->
+    <span class="error-message" id="passwordError"></span>
+
+    <!-- Confirm password input field -->
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+    <!-- Error message placeholder for confirm password validation -->
+    <span class="error-message" id="confirmPasswordError"></span>
+
+    <!-- Phone number input field with type 'tel' for phone number validation -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <!-- Error message placeholder for phone number validation -->
+    <span class="error-message" id="phoneError"></span>
+
+    <!-- Age input field with type 'number' for numeric input only -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <!-- Error message placeholder for age validation -->
+    <span class="error-message" id="ageError"></span>
+
+    <!-- Country selection dropdown with various country options -->
+    <label for="country">Country of Residence:</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="USA">USA</option>
+      <option value="Canada">Canada</option>
+      <option value="UK">UK</option>
+      <option value="Spain">Spain</option>
+      <option value="France">France</option>
+      <option value="Italy">Italy</option>
+    </select>
+    <!-- Error message placeholder for country validation -->
+    <span class="error-message" id="countryError"></span>
+
+    <!-- Terms and conditions checkbox for agreement -->
+    <label>
+      <input type="checkbox" id="terms" name="terms" required>
+      I agree to the <a href="#">terms and conditions</a>.
+    </label>
+    <!-- Error message placeholder for terms agreement validation -->
+    <span class="error-message" id="termsError"></span>
+
+    <!-- Submit button to submit the form data -->
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Link to external JavaScript file containing validation logic -->
+  <script src="Validation Project JS File.js"></script>
+</body>
+</html>

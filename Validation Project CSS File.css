@@ -1,0 +1,116 @@
+/* Main styling for the body element */
+body {
+  /* Set the font for the entire page */
+  font-family: Arial, sans-serif;
+
+  /* Use flexbox to center content both vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Full viewport height to center the form */
+  height: 100vh;
+
+  /* Light background color to contrast with the form */
+  background-color: #f4f4f9;
+}
+
+/* Styling for the heading element */
+h2 {
+  /* Center align the heading text */
+  text-align: center;
+
+  /* Dark color for better readability */
+  color: #333;
+}
+
+/* Form container styling */
+form {
+  /* Limit form width for a cleaner look */
+  max-width: 400px;
+
+  /* Padding around form content */
+  padding: 20px;
+
+  /* Light border for form definition */
+  border: 1px solid #ccc;
+
+  /* Background color to separate form from page */
+  background-color: #fff;
+
+  /* Rounded corners for a modern look */
+  border-radius: 5px;
+}
+
+/* Styling for label elements within the form */
+label {
+  /* Add space above each label for separation */
+  margin-top: 10px;
+
+  /* Display labels as blocks to use full width */
+  display: block;
+
+  /* Bold font to make labels stand out */
+  font-weight: bold;
+}
+
+/* Input field styling */
+input {
+  /* Full width for input fields */
+  width: 100%;
+
+  /* Padding for a larger clickable area */
+  padding: 8px;
+
+  /* Small margin for spacing from other elements */
+  margin-top: 5px;
+  margin-bottom: 15px;
+
+  /* Light border for input fields */
+  border: 1px solid #ddd;
+
+  /* Rounded corners for uniformity with the form container */
+  border-radius: 4px;
+}
+
+/* Submit button styling */
+button {
+  /* Full width button to match input fields */
+  width: 100%;
+
+  /* Padding to make the button large and clickable */
+  padding: 10px;
+
+  /* Background color for a call-to-action look */
+  background-color: #4CAF50;
+
+  /* White text for contrast against green button */
+  color: white;
+
+  /* Remove default border styling */
+  border: none;
+
+  /* Rounded corners for a consistent style */
+  border-radius: 4px;
+
+  /* Increase font size for readability */
+  font-size: 16px;
+}
+
+/* Hover effect for button */
+button:hover {
+  /* Slightly darker green on hover for feedback */
+  background-color: #45a049;
+}
+
+/* Error message styling */
+.error-message {
+  /* Red color to indicate error */
+  color: red;
+
+  /* Slightly smaller font size than normal text */
+  font-size: 0.9em;
+
+  /* Hide error message by default; can be shown dynamically */
+  display: none;
+}
